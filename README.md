@@ -107,6 +107,8 @@ Die allgemeine Geschwister-Selektor wählt alle Elemente, die Geschwister eines 
 Das folgende Beispiel wählt alle <p> Elemente , die Geschwister sind <div> Elemente:
 Beispiel
 
+```
 - div ~ p {
 - background-color: yellow;
 - }
+```
