@@ -12,51 +12,63 @@ Alle HTML-Elemente, die innerhalb des body-Elements sitzen, eignen sich als CSS-
 
 Einfacher Element-Selector
 
-- a { text-decoration: none; }
-- p { color: rgb(80,80,10); }
-- ^
-- |
-- +---- Element-Selektor
+```
+a { text-decoration: none; }
+p { color: rgb(80,80,10); }
+^
+|
++---- Element-Selektor
+```
 
 Damit Stylesheet-Regeln nicht immer auf alle Elemente – z.B. alle p-Elemente – angewendet werden, differenzieren Selektoren die Anwendung eines CSS-Stils. Die einfachsten Selektoren nutzen HTML-Attribute wie class und id, um besondere Elemente herauszufiltern.
 
 Klassen- und ID-Selektoren
 
-- +-- ID-Selektor
-- |
-- v
-- #extlink { color: green; }
-- .meta { font-size: smaller }
-- ^
-- |
-- +---- Klassen-Selektor
+```
++-- ID-Selektor
+|
+v
+#extlink { color: green; }
+.meta { font-size: smaller }
+^
+|
++---- Klassen-Selektor
+```
 
 ### Komplexe Selektoren
 
 Darüber hinaus filtern Attribut - Selektoren Elemente mit bestimmten Attributen wie einem title- oder lang-Attribut und lassen sich anhand ihrer Position innerhalb des HTML-Dokuments (dem Kontext) identifizieren. Pseudoklassen und Pseudoelemente maskieren Elemente, die es im HTML-Quellcode nicht gibt – z.B. ein Link, über dem die Maus gerade hovert.
 Diese grundlegenden Selektoren lassen sich miteinander kombinieren, so dass komplexe Suchmuster entstehen.
 
-- -
-- - Universal CSS selector | Universal-Selektor
-- Alle Elemente der HTML-Seite
-- - {color: red }
+```
+*
+Universal CSS selector | Universal-Selektor
+Alle Elemente der HTML-Seite
+*{color: red }
+```
 
-- <p>
-- type selector | Typ-Selektor
-- Alle p-Elemente der HTML-Seite
-- p { font-family: fantasy }
+```
+<p>
+type selector | Typ-Selektor
+Alle p-Elemente der HTML-Seite
+p { font-family: fantasy }
+```
 
-- <p class="extra">
-- class selector | Klassen-Selektor
-- Alle p-Elemente mit dem Attribut class="extra"
-- .extra { font-size: 2em; } oder
-- p.extra { font-size: 2em }
+```
+<p class="extra">
+class selector | Klassen-Selektor
+Alle p-Elemente mit dem Attribut class="extra"
+.extra { font-size: 2em; } oder
+p.extra { font-size: 2em }
+```
 
-- <e id="foo">
-- ID-Selektor
-- Das HTML-Element mit dem Attribut id="foo"
-- #foo { float: right } oder
-- div#foo { float: right }
+```
+<e id="foo">
+ID-Selektor
+Das HTML-Element mit dem Attribut id="foo"
+#foo { float: right } oder
+div#foo { float: right }
+```
 
 ## CSS Kombinatoren
 
@@ -86,9 +98,11 @@ Das Kind Selektor wählt alle Elemente, die die unmittelbaren Kinder eines besti
 Das folgende Beispiel wählt alle <p> Elemente, die unmittelbare Kinder eines <div> Element:
 Beispiel
 
-- div > p {
-- background-color: yellow;
-- }
+```
+div > p {
+background-color: yellow;
+}
+```
 
 ### Benachbarte Geschwister Selector
 
@@ -97,9 +111,11 @@ Geschwister Elemente müssen die gleiche Elternelement haben, und "benachbart" b
 Das folgende Beispiel wählt alle <p> Elemente , die unmittelbar nach platziert werden <div> Elemente:
 Beispiel
 
-- div + p {
-- background-color: yellow;
-- }
+```
+div + p {
+background-color: yellow;
+}
+```
 
 ### Allgemein Geschwister Selector
 
@@ -108,7 +124,7 @@ Das folgende Beispiel wählt alle <p> Elemente , die Geschwister sind <div> 
 Beispiel
 
 ```
-- div ~ p {
-- background-color: yellow;
-- }
+div ~ p {
+background-color: yellow;
+}
 ```
