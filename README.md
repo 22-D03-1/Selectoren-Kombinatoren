@@ -98,7 +98,7 @@ background-color: yellow;
 ### Kindselektor
 
 Das Kind Selektor wählt alle Elemente, die die unmittelbaren Kinder eines bestimmten Elements sind.
-Das folgende Beispiel wählt alle <p> Elemente, die unmittelbare Kinder eines <div> Element:
+Das folgende Beispiel wählt alle `<p>` Elemente, die unmittelbare Kinder eines `<div>` Element:
 
 Beispiel
 
@@ -112,7 +112,7 @@ background-color: yellow;
 
 Die benachbarten Geschwister-Selektor wählt alle Elemente, die die benachbarten Geschwister eines bestimmten Elements sind.
 Geschwister Elemente müssen die gleiche Elternelement haben, und "benachbart" bedeutet "unmittelbar nach".
-Das folgende Beispiel wählt alle <p> Elemente , die unmittelbar nach platziert werden <div> Elemente:
+Das folgende Beispiel wählt alle `<p>` Elemente , die unmittelbar nach platziert werden `<div>` Elemente:
 
 Beispiel
 
@@ -125,7 +125,7 @@ background-color: yellow;
 ### Allgemein Geschwister Selector
 
 Die allgemeine Geschwister-Selektor wählt alle Elemente, die Geschwister eines bestimmten Elements sind.
-Das folgende Beispiel wählt alle <p> Elemente , die Geschwister sind <div> Elemente:
+Das folgende Beispiel wählt alle `<p>` Elemente, die Geschwister sind `<div>` Elemente:
 
 Beispiel
 
@@ -136,6 +136,8 @@ background-color: yellow;
 ```
 
 ### Sources;
+
+---
 
 [Selektoren](https://www.mediaevent.de/css/css-selektor.html#:~:text=Ein%20CSS%2DSelektor%20identifiziert%20HTML,Selektoren%20komplexe%20Filter%20zu%20erzeugen.)
 
