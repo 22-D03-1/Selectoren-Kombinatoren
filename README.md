@@ -134,3 +134,9 @@ div ~ p {
 background-color: yellow;
 }
 ```
+
+### Sources;
+
+[Selektoren](https://www.mediaevent.de/css/css-selektor.html#:~:text=Ein%20CSS%2DSelektor%20identifiziert%20HTML,Selektoren%20komplexe%20Filter%20zu%20erzeugen.)
+
+[Kombinatoren](http://www.w3bai.com/de/css/css_combinators.html)
