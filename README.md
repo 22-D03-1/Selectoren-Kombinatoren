@@ -85,17 +85,21 @@ Es gibt vier verschiedene Kombinatoren in CSS3:
 ### Nachkomme Selector
 
 Der Nachkomme Selektor passt auf alle Elemente, die Nachkommen eines bestimmten Elements sind.
-Das folgende Beispiel wählt alle <p> Elemente innerhalb <div> Elemente:
+Das folgende Beispiel wählt alle `<p>` Elemente innerhalb `<div>` Elemente:
+
 Beispiel
 
-- div p {
-- background-color: yellow;
-- }
+```
+div p {
+background-color: yellow;
+}
+```
 
 ### Kindselektor
 
 Das Kind Selektor wählt alle Elemente, die die unmittelbaren Kinder eines bestimmten Elements sind.
 Das folgende Beispiel wählt alle <p> Elemente, die unmittelbare Kinder eines <div> Element:
+
 Beispiel
 
 ```
@@ -109,6 +113,7 @@ background-color: yellow;
 Die benachbarten Geschwister-Selektor wählt alle Elemente, die die benachbarten Geschwister eines bestimmten Elements sind.
 Geschwister Elemente müssen die gleiche Elternelement haben, und "benachbart" bedeutet "unmittelbar nach".
 Das folgende Beispiel wählt alle <p> Elemente , die unmittelbar nach platziert werden <div> Elemente:
+
 Beispiel
 
 ```
@@ -121,6 +126,7 @@ background-color: yellow;
 
 Die allgemeine Geschwister-Selektor wählt alle Elemente, die Geschwister eines bestimmten Elements sind.
 Das folgende Beispiel wählt alle <p> Elemente , die Geschwister sind <div> Elemente:
+
 Beispiel
 
 ```
